@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#header {
+  background-color: white;
+  min-height: auto;
+  width: 100%;
+  z-index: 100;
+  color: white;
+}
+
+#header .headerUp {
+  padding: 8px 40px 0px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 95px;
+  width: 100px;
+}
+
+.buscador .searchForm {
+  position: relative;
+}
+
+.buscador .searchForm input {
+  width: 620px;
+  height: 50px;
+  text-align: left;
+  padding-left: 5px;
+  border: 2px solid #212e3e;
+  border-radius: 3px; 
+}
+
+.buscador .searchForm button {
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  background-color: #7db34d;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 2px solid #212e3e;
+  border-radius: 4px;
+  position: absolute;
+  top: 20%;
+  right: 1%;   
+}
+
+.buscador .searchForm button:hover {
+  color: #212e3e;
+}
+
+.miCuenta {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #212e3e;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold; 
+  color: #212e3e;
+  padding-top: 12px; 
+  border-radius: 30px;
+  color: #7db34d;
+}
+
+/*MENU NAV*/
+
+#header .headerDown {
+  padding: 35px 58px 18px 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #212e3e;
+  background-color: white;
+  height: 30px;
+}
+
+#menu {
+  display: inline-block;
+}
+
+#menu ul li {
+  list-style: none;
+  display: inline-block; 
+  padding-right: 22px;
+  font-weight: bold;
+} 
+
+#menu ul li a {
+  text-decoration: none; 
+  color: #212e3e;
+}
+
+#menu ul li a:hover {
+ color: #7db34d;
+}
+
+#carrito {
+  color: #212e3e;
+  font-weight: bold;
+}
+
+/*BANNER PRINCIPAL*/
+
+#banner {
+ width: 98%;
+ margin: auto;
+ padding-top: 25px;
+ border: 5px solid white;
+}
+
+.slider {
+ min-height: 450px;
+ display: flex;
+ flex-direction: row;
+ align-items: center; 
+ background-image: url("./Multimedia/banner2.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.slider h3 {
+ width: 100%;
+ text-align: center;
+ color: white;
+ letter-spacing: 12px;
+ font-size: 60px;
+ font-weight: bold;
+ border-top: 15px solid white;
+ border-bottom: 15px solid white;
+ padding: 45px 0px;
+ text-shadow: #212e3e 0.1em 0.1em 0.2em;
+}
+
+/*CATEGORIAS*/
+
+#Categories {
+ padding: 0px 30px 0px 30px;
+ background-color: #7db34d;
+ min-height: 150px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+}
+
+#Categories .boxCategory {
+  height: 50px;
+  width: 200px;
+  padding-top: 12px;
+  text-align: center;
+  border: 2px solid #212e3e;
+  border-radius: 3px;
+  background-color: white;
+  color: #212e3e;
+}
+
+#Categories .boxCategory h4 {
+  font-size: 18px;
+}
+
+#bannerSecundario {
+ width: 100%;
+ margin: auto;
+ border-top: 4px solid white;
+}
+
+.bannerProducts {
+ min-height: 250px;
+ display: flex;
+ flex-direction: row;
+ align-items: center; 
+ background-image: url("./Multimedia/banner1.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+#bannerSecundario .bannerProducts a {
+  margin: auto;
+  text-decoration: none;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  text-shadow: #212e3e 0.1em 0.1em 0.2em;
+}
+
+#bannerSecundario .bannerProducts a:hover {
+  color: #7db34d;
+}
+
+footer {
+  min-height: 350px;
+}
+
+footer div {
+  text-align: center;
+  padding-top: 175px;
+}

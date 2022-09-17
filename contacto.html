@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="headerUp">
+            <div class="logo"> 
+                <a href="index.html"><img src="./Multimedia/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="buscador">
+                <form class="searchForm" action="/search/" method="get">
+                    <div>
+                        <input autocomplete="off" type="search" name="q" placeholder="¿Qué estás buscando?">
+                        <button type="submit" value="Buscar">Buscar
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="miCuenta">
+                <span>Mi Cuenta</span>
+            </div>
+        </div>    
+        <div class="headerDown">
+            <div>
+                <nav id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="preguntasFrecuentes.html">Preguntas frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="quienesSomos.html">¿Quienes somos?</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </div>
+            
+            <div id="carrito">
+                <p>Carrito</p>
+            </div>
+
+         </div>
+    </header>
+
+ <h2>Contacto</h2>
+
+ <form action="enviar.php" method="" enctype="">
+     <div>
+         <label for="nombre">Nombre</label>
+         <input type="text" id="nombre" placeholder="Ingrese su nombre..." required>
+     </div>
+     <br>
+     <div>
+        <label for="nombre">Apellido</label>
+        <input type="text" id="nombre" placeholder="Ingrese su apellido..." required>
+    </div>
+     <br>
+     <div>
+         <label for="mail">Correo electrónico</label>
+         <input required type="email" id="mail" name="Correo electrónico">
+     </div>
+     <br>
+     <br>
+     <div>
+         <label for="comentarios">Escribe su mensaje</label>
+         <textarea name="" id="comentarios" cols="30" rows="5"></textarea>
+     </div>
+     <br>
+
+     <div>
+         <input type="checkbox" name="opciones" id="aceptar"> Acepto ter. y cond.
+         <input type="checkbox" name="opciones" id="news"> Recibir news.
+     </div>
+     <br>
+     <div>
+         <label for="pais">Soy de...</label>
+         <select name="" id="pais">
+             <option value="1">Argentina</option>
+             <option value="2">Chile</option>
+             <option value="3">Perú</option>
+         </select>
+     </div>
+     <br>
+     <div>
+         <input type="submit" value="Enviar ahora">
+         <input type="reset" value="Borrar todo">
+    </div>
+
+ </form>
+
+ <footer>
+    <div>
+        Espacio para el footer
+    </div>
+ </footer>
+
+
+
+
+</body>
+</html>

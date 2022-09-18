@@ -11,17 +11,8 @@ body {
 #header {
   background-color: white;
   min-height: auto;
-  width: 100%;
   z-index: 100;
   color: white;
-}
-
-#header .headerUp {
-  padding: 8px 40px 0px 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo img {
@@ -54,27 +45,29 @@ body {
   border-radius: 4px;
   position: absolute;
   top: 20%;
-  right: 1%;   
+  right: 15%;   
 }
 
 .buscador .searchForm button:hover {
   color: #212e3e;
 }
 
-.miCuenta {
-  width: 60px;
-  height: 60px;
-  border: 2px solid #212e3e;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: bold; 
-  color: #212e3e;
-  padding-top: 12px; 
-  border-radius: 30px;
+.fa-user-large {
   color: #7db34d;
 }
+/*
+#header .headerUp {
+  padding: 8px 40px 0px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/*MENU NAV*/
+
+/*
+
+/*MENU NAV
 
 #header .headerDown {
   padding: 35px 58px 18px 58px;
@@ -110,6 +103,38 @@ body {
 #carrito {
   color: #212e3e;
   font-weight: bold;
+}
+
+*/ 
+#header .headerDown {
+  padding: 35px 58px 18px 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #212e3e;
+  background-color: white;
+  height: 30px;
+}
+
+
+#navbarNav .navbar-nav .nav-item .nav-link {
+  color: #212e3e;
+  font-weight: bold;
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link:hover {
+ color: #7db34d;
+}
+
+.carrito {
+  text-align: center;
+  padding-left: 9.5rem;
+}
+
+.fa-cart-shopping {
+  color: #212e3e;
+ 
 }
 
 /*BANNER PRINCIPAL*/

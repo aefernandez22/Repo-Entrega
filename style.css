@@ -25,7 +25,7 @@ body {
 }
 
 .buscador .searchForm input {
-  width: 620px;
+  width: 80%;
   height: 50px;
   text-align: left;
   padding-left: 5px;
@@ -44,8 +44,8 @@ body {
   border: 2px solid #212e3e;
   border-radius: 4px;
   position: absolute;
-  top: 20%;
-  right: 15%;   
+  top: 10px;
+  right: 100px;  
 }
 
 .buscador .searchForm button:hover {
@@ -125,6 +125,12 @@ body {
 
 #navbarNav .navbar-nav .nav-item .nav-link:hover {
  color: #7db34d;
+}
+
+@media all and (max-widht:768px){
+  .navbar{
+    height: 46px;
+  }
 }
 
 .carrito {

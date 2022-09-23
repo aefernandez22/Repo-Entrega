@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    <title>TIENDA PADEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>TIENDA PADEL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/b8f0d27d04.js" crossorigin="anonymous"></script>
 </head>
 
 <body>    
-    <header id="header" class="container-fluid px-0">
-        <div class="headerUp d-flex flex-row text-center px-md-4">
-            <div class="logo col-12 col-md-2 align-self-center"> 
+    <header id="header">
+        <div class="headerUp container-fluid">
+            <div class="row px-3 text-center">
+                <div class="logo col-12 col-md-2 align-self-center"> 
                     <a href="index.html"><img src="./Multimedia/Logo.png" alt="Logo"></a>
-            </div>
-            <div class="headerUpCenter col-md-8 align-self-center">
-                <div class="buscador">
-                    <form class="searchForm" action="/search/" method="get">
-                        <div>
-                            <input autocomplete="off" type="search" name="q" placeholder="¿Qué estás buscando?">
-                            <button type="submit" value="Buscar">Buscar
-                            </button>
-                        </div>
-                    </form>
                 </div>
-            </div>    
-            <div class="miCuenta col-md-2 align-self-center">
-                <a href="#">
-                    <i class="fa-solid fa-user-large fa-2xl"></i>
-                </a>
+                <div class="buscador col-md-8 align-self-center">
+                        <form class="searchForm" action="/search/" method="get">
+                            <div>
+                                <input autocomplete="off" type="search" name="q" placeholder="¿Qué estás buscando?">
+                                <button type="submit" value="Buscar">Buscar</button>
+                            </div>
+                        </form>
+                </div>    
+                <div class="myAccount col-md-2 align-self-center">
+                    <div class="myAccountBox">
+                        <a href="#">
+                            <i class="fa-solid fa-user-large fa-xl"></i>
+                        </a>
+                    </div>    
+                     <p>Mi Cuenta</p>
+                </div>
             </div>
-        </div>    
-        <div class="headerDown px-4">
-            <nav class="navbar navbar-expand-lg col-lg-10">
-                <div class="container-fluid">
+        </div>  
+        <div class="headerDown container-fluid no-gutter px-4 py-lg-1">
+            <div class="row">
+                <nav class="navbar navbar-expand-md py-0 col-11">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -56,20 +59,20 @@
                         </li>
                       </ul>
                     </div>
+                </nav>   
+                <div class="carrito col-1 py-2">
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
                 </div>
-            </nav>
-            <div class="carrito col-lg-2">
-                <i class="fa-solid fa-cart-shopping fa-xl"></i>
-            </div>
-         </div>
+            </div>  
+        </div>
     </header>
-    
-    <div id="banner">
+    <!--CARRUSEL -->
+    <div id="carrusel">
         <div class="slider">
             <h3>SHOP ONLINE</h3>
         </div> 
     </div>
-
+    <!--CATEGORIAS-->
     <div id="Categories">
         <div class="boxCategory">
             <h4>Paletas</h4>
@@ -86,58 +89,24 @@
         <div class="bannerProducts">
             <a href=productos.html>Ver todos los productos</a>
         </div>
-    </div>
-    <!--  
-
-        <footer id="footer">
-            <div class="seccion1">
-                <h3>Newsletter</h3>
-                <form action="enviar.php" method="" enctype="">
-                    <input type="text" placeholder="Email" required> 
+    </div>     
+    <footer class="footer container-fluid">
+        <div class="row p-5 bg-light text-success">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <p class="h5 text-center mb-3 text-dark">Newsletter</p>
+                <div class="news"> 
+                    <form class="form-floating">
+                        <div>
+                            <input autocomplete="off" type="search" name="q" placeholder="Email">
+                            <button type="submit" value="Buscar">Enviar</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="seccion2">
-                    <h3>Sigamos Conectados
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <i class="fa-brands fa-facebook"></i>
-    
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/?lang=es" target="_blank">
-            <i class="fa-brands fa-twitter"></i>
-        </a>
-    </h3>
-</div>
-<div class="seccion3">
-    <h3>Datos de contacto</h3>
-    <ul class="datosContacto">
-        <li>1166852222</li>
-        <li>info@tiendapadel.com.ar</li>
-        <li>Belgrano, Ciudad de Buenos Aires</li>
-    </ul>
-</div>
-</footer>
--->
-<div class="container-fluid">
-    <div class="row p-5 bg-light text-success">
-        
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-            <p class="h5 text-center mb-3 text-dark">Newsletter</p>
-    
-        <div class=""> 
-            <form class="form-floating">
-                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
-                <label for="floatingInputValue">Email</label>
-              </form>
-        </div>
-        </div>
-        
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-            <p class="h5 text-center text-dark">Sigamos conectados</p>
-            
-            <div style="text-align: center; margin-top: 20px;">
-                   <a class="text-decoration-none pr-" href="https://www.facebook.com/" target="_blank">
+            </div>
+            <div class="redesIcons col-12 col-sm-12 col-md-6 col-lg-4">
+                <p class="h5 text-center text-dark">Sigamos conectados</p>
+                <div style="text-align: center; margin-top: 20px;">
+                   <a class="text-decoration-none" href="https://www.facebook.com/" target="_blank">
                        <i class="fa-brands fa-facebook fa-2x p-2"></i>
                     </a>
                     <a class="text-decoration-none" href="https://www.instagram.com/" target="_blank">
@@ -146,18 +115,19 @@
                     <a class="text-decoration-none" href="https://twitter.com/?lang=es" target="_blank">
                         <i class="fa-brands fa-twitter fa-2x p-2"></i>
                     </a>  
+                </div>
+            </div>
+            <div class="datosFooter col-12 col-sm-12 col-md-6 col-lg-4">
+                <p class="h5 text-center text-dark">Datos de contacto</p>
+                <p class="h8 text-center mt-4">tel: 01166852222</p>
+                <p class="h8 text-center mt-1">info@tiendapadel.com.ar</p>
+                <p class="h8 text-center mt-1">Belgrano, Ciudad de Buenos Aires</p>
             </div>
         </div>
-        
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-            <p class="h5 text-center text-dark">Datos de contacto</p>
-            <p class="h8 text-center mt-4">tel: 01166852222</p>
-            <p class="h8 text-center mt-1">info@tiendapadel.com.ar</p>
-            <p class="h8 text-center mt-1">Belgrano, Ciudad de Buenos Aires</p>
-        </div>
+    </footer>
+    <div id="whatsApp">
+        <a href="https://wa.me/1123456789?text=CoderHouse" target="_blank"><img src="multimedia/wspp.png" alt="WhasApp"></a>
     </div>
-
-</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

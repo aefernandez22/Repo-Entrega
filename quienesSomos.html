@@ -9,31 +9,34 @@
     <script src="https://kit.fontawesome.com/b8f0d27d04.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header id="header" class="container-fluid px-0">
-        <div class="headerUp d-flex flex-row text-center px-md-4">
-            <div class="logo col-12 col-md-2 align-self-center"> 
+    
+    <header id="header">
+        <div class="headerUp container-fluid">
+            <div class="row px-3 text-center">
+                <div class="logo col-12 col-md-2 align-self-center"> 
                     <a href="index.html"><img src="./Multimedia/Logo.png" alt="Logo"></a>
-            </div>
-            <div class="headerUpCenter col-md-8 align-self-center">
-                <div class="buscador">
-                    <form class="searchForm" action="/search/" method="get">
-                        <div>
-                            <input autocomplete="off" type="search" name="q" placeholder="¿Qué estás buscando?">
-                            <button type="submit" value="Buscar">Buscar
-                            </button>
-                        </div>
-                    </form>
                 </div>
-            </div>    
-            <div class="miCuenta col-md-2 align-self-center">
-                <a href="#">
-                    <i class="fa-solid fa-user-large fa-2xl"></i>
-                </a>
+                <div class="buscador col-md-8 align-self-center">
+                        <form class="searchForm" action="/search/" method="get">
+                            <div>
+                                <input autocomplete="off" type="search" name="q" placeholder="¿Qué estás buscando?">
+                                <button type="submit" value="Buscar">Buscar</button>
+                            </div>
+                        </form>
+                </div>    
+                <div class="myAccount col-md-2 align-self-center">
+                    <div class="myAccountBox">
+                        <a href="#">
+                            <i class="fa-solid fa-user-large fa-xl"></i>
+                        </a>
+                    </div>    
+                     <p>Mi Cuenta</p>
+                </div>
             </div>
-        </div>    
-        <div class="headerDown px-4">
-            <nav class="navbar navbar-expand-lg col-lg-10">
-                <div class="container-fluid">
+        </div>  
+        <div class="headerDown container-fluid no-gutter px-4 py-lg-1">
+            <div class="row">
+                <nav class="navbar navbar-expand-md py-0 col-11">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -55,13 +58,14 @@
                         </li>
                       </ul>
                     </div>
+                </nav>   
+                <div class="carrito col-1 py-2">
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
                 </div>
-            </nav>
-            <div class="carrito col-lg-2">
-                <i class="fa-solid fa-cart-shopping fa-xl"></i>
-            </div>
-         </div>
+            </div>  
+        </div>
     </header>
+
 <div class="container">
 
     <p class="h2 mt-5">Sobre Nosotros</p>
@@ -93,46 +97,41 @@
 
 </div>
  
-
-
-<div class="container-fluid">
+<footer class="footer container-fluid">
     <div class="row p-5 bg-light text-success">
-        
         <div class="col-12 col-sm-12 col-md-6 col-lg-4">
             <p class="h5 text-center mb-3 text-dark">Newsletter</p>
-            
-            <div class=""> 
+            <div class="news"> 
                 <form class="form-floating">
-                    <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
-                <label or="floatingInputValue">Email</label>
-            </form>
-        </div>
-    </div>
-        
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-            <p class="h5 text-center text-dark">Sigamos conectados</p>
-            
-            <div style="text-align: center; margin-top: 20px;">
-                   <a class="text-decoration-none pr-" href="https://www.facebook.com/" target="_blank">
-                       <i class="fa-brands fa-facebook fa-2x p-2"></i>
-                    </a>
-                    <a class="text-decoration-none" href="https://www.instagram.com/" target="_blank">
-                        <i class="fa-brands fa-instagram fa-2x p-2"></i>
-                    </a>
-                    <a class="text-decoration-none" href="https://twitter.com/?lang=es" target="_blank">
-                        <i class="fa-brands fa-twitter fa-2x p-2"></i>
-                    </a>  
+                    <div>
+                        <input autocomplete="off" type="search" name="q" placeholder="Email">
+                        <button type="submit" value="Buscar">Enviar</button>
+                    </div>
+                </form>
             </div>
         </div>
-        
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="redesIcons col-12 col-sm-12 col-md-6 col-lg-4">
+            <p class="h5 text-center text-dark">Sigamos conectados</p>
+            <div style="text-align: center; margin-top: 20px;">
+               <a class="text-decoration-none" href="https://www.facebook.com/" target="_blank">
+                   <i class="fa-brands fa-facebook fa-2x p-2"></i>
+                </a>
+                <a class="text-decoration-none" href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2x p-2"></i>
+                </a>
+                <a class="text-decoration-none" href="https://twitter.com/?lang=es" target="_blank">
+                    <i class="fa-brands fa-twitter fa-2x p-2"></i>
+                </a>  
+            </div>
+        </div>
+        <div class="datosFooter col-12 col-sm-12 col-md-6 col-lg-4">
             <p class="h5 text-center text-dark">Datos de contacto</p>
             <p class="h8 text-center mt-4">tel: 01166852222</p>
             <p class="h8 text-center mt-1">info@tiendapadel.com.ar</p>
             <p class="h8 text-center mt-1">Belgrano, Ciudad de Buenos Aires</p>
         </div>
     </div>
-
+</footer>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
